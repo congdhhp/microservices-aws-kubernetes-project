@@ -13,5 +13,7 @@ RUN pip install -r requirements.txt
 
 COPY ./analytics .
 
+RUN python --version
+
 # Start the database and Flask application
 CMD service postgresql start && python app.py
